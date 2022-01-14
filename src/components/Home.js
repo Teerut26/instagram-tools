@@ -25,6 +25,10 @@ function Home({ dispatch, user_data }) {
       type: "set_user_data",
       playload: data.data,
     });
+    dispatch({
+      type: "set_user_feeds",
+      playload: data.data.graphql.user.edge_owner_to_timeline_media.edges,
+    });
   };
 
   useEffect(() => {

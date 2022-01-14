@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import Info from "./components/Info";
 // var _ = require("lodash");
 
-function App(props) {
+function App() {
   return (
     <Router>
         <Routes>
